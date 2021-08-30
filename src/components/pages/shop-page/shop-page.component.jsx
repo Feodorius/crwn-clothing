@@ -19,7 +19,7 @@ class ShopPage extends Component {
                 {
                     collections.map(({ id, ...otherCollectionProps }) => (
                         <div>
-                            <CollectionPreview key={id} {...otherCollectionProps} />
+                            <CollectionPreview key={`${id}-preview`} {...otherCollectionProps} />
                         </div>
                     ))
                 }
